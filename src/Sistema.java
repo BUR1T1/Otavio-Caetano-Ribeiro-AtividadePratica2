@@ -8,7 +8,7 @@ public class Sistema {
     public static void salvarVeiculosEmArquivo() {
         List<Concessionaria> veiculos = ListaDeVeiculos.ExibirListaConcessionarias();
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("veiculos.txt"))) {
-             // Escrevendo o cabeçalho no arquivo
+
              String cabecalho = "Lista de Veículos:";
              writer.write(cabecalho);
              writer.newLine();
