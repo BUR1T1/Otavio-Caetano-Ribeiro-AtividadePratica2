@@ -1,0 +1,59 @@
+Lista de Veículos:
+====================================
+
+Veiculo: 5tom
+Ano: 2012
+Preço: R$500.0
+Capacidade de carga: 5 toneladas
+Quantidade de eixos: 3 eixos.
+========================================
+
+Veiculo: Scania142
+Ano: 1989
+Preço: R$135.0
+Capacidade de carga: 41 toneladas
+Quantidade de eixos: 3 eixos.
+========================================
+
+Veiculo: Volvo FH540
+Ano: 2022
+Preço: R$985.0
+Capacidade de carga: 80 toneladas
+Quantidade de eixos: 9 eixos.
+========================================
+
+Veiculo: Ferrari 488 GTB
+Ano: 2021
+Preço: R$2.0
+Potencia do motor: 8000RPM  (rotações por minuto)
+========================================
+
+Veiculo: Lamborghini Huracán EVO
+Ano: 2022
+Preço: R$2.5
+Potencia do motor: 8000RPM  (rotações por minuto)
+========================================
+
+Veiculo: Porsche 911 Turbo S
+Ano: 2020
+Preço: R$1.8
+Potencia do motor: 7000RPM  (rotações por minuto)
+========================================
+
+Veiculo: Spin
+Ano: 2022
+Preço: R$70.0
+Quantidade de assentos por pessoa: 7
+========================================
+
+Veiculo: Doblo
+Ano: 2021
+Preço: R$65.0
+Quantidade de assentos por pessoa: 9
+========================================
+
+Veiculo: Kombi
+Ano: 2021
+Preço: R$65.0
+Quantidade de assentos por pessoa: 9
+========================================

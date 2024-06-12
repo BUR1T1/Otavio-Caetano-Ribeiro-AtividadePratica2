@@ -1,6 +1,29 @@
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.List;
 
 public class Sistema {
-    
+
+    public static void salvarVeiculosEmArquivo() {
+        List<Concessionaria> veiculos = ListaDeVeiculos.ExibirListaConcessionarias();
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("veiculos.txt"))) {
+             // Escrevendo o cabeçalho no arquivo
+             String cabecalho = "Lista de Veículos:";
+             writer.write(cabecalho);
+             writer.newLine();
+             writer.write("====================================");
+             writer.newLine();
+ 
+            for (Concessionaria veiculo : veiculos) {
+                writer.write(veiculo.toString());
+                writer.newLine();
+            }
+            System.out.println("Lista de veículos salva em 'veiculos.txt'.");
+        } catch (IOException e) {
+            System.out.println("Erro ao salvar os veículos no arquivo: " + e.getMessage());
+        }
+    }
     
     
     public static void ExibirMenu(){
@@ -156,8 +179,15 @@ public class Sistema {
                 System.out.println("==================================================");
                 System.out.println("O programa foi finalizado...");
                 System.out.println("==================================================");
-                
                 continuar = false;
+                break;
+
+                case "txt":
+                System.out.println("==================================================");
+                salvarVeiculosEmArquivo();
+                System.out.println("Arquivo txt gerado...");
+                System.out.println("==================================================");
+
                 break;
                 default:
                 System.out.println("====================================");
