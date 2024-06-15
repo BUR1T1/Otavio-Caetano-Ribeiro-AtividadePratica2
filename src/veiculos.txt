@@ -1,5 +1,5 @@
-Lista de Veículos:
-====================================
+-------- Lista de todos os veiculos --------
+===================================================
 
 Veiculo: 5tom
 Ano: 2012
@@ -56,23 +56,4 @@ Veiculo: Kombi
 Ano: 2021
 Preço: R$65.0
 Quantidade de assentos por pessoa: 9
-========================================
-
-Veiculo: camaro
-Ano: 2021
-Preço: R$100000.0
-Potencia do motor: 3000RPM  (rotações por minuto)
-========================================
-
-Veiculo: livina
-Ano: 2012
-Preço: R$34000.0
-Quantidade de assentos por pessoa: 7
-========================================
-
-Veiculo: teste
-Ano: 0
-Preço: R$0.0
-Capacidade de carga: 0 toneladas
-Quantidade de eixos: 0 eixos.
 ========================================

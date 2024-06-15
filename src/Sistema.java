@@ -1,31 +1,4 @@
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.List;
-
 public class Sistema {
-
-    public static void salvarVeiculosEmArquivo() {
-        List<Concessionaria> veiculos = ListaDeVeiculos.ExibirListaConcessionarias();
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("veiculos.txt"))) {
-
-             String cabecalho = "Lista de Veículos:";
-             writer.write(cabecalho);
-             writer.newLine();
-             writer.write("====================================");
-             writer.newLine();
- 
-            for (Concessionaria veiculo : veiculos) {
-                writer.write(veiculo.toString());
-                writer.newLine();
-            }
-            System.out.println("Lista de veículos salva em 'veiculos.txt'.");
-        } catch (IOException e) {
-            System.out.println("Erro ao salvar os veículos no arquivo: " + e.getMessage());
-        }
-    }
-    
-    
     public static void ExibirMenu(){
 
         System.out.println("---- Comandos do Sistema ----");
@@ -38,8 +11,11 @@ public class Sistema {
         System.out.println("7)listar todos os veiculos esportivos.");
         System.out.println("8)listar todos os veiculos de passeio.");  
         System.out.println("9)listar todos od veiculos."); 
+        System.out.println("[ txta ] gera um arquivo txt de todos os veiculos cadastrados.");
+        System.out.println("[ txte ] gera um arquivo txt de todos os veiculos Esportivo cadastrados.");
+        System.out.println("[ txtc ] gera um arquivo txt de todos os veiculos de Carga cadastrados.");
+        System.out.println("[ txtp ] gera um arquivo txt de todos os veiculos de Passeio cadastrados.");
         System.out.println("0)finaliza o programa.");
-        
     }
     
     public static void Controle(){
@@ -80,7 +56,7 @@ public class Sistema {
                 
                 VeiculosEsportivos newEsportivo = new VeiculosEsportivos(nomeveiculo, ano, preco, potenciaMotor);
                 
-                ListaDeVeiculos.Addveiculo(newEsportivo);
+                ListaDeVeiculos.addVeiculo(newEsportivo);
                 System.out.println("=======================================");
                 
                 break;
@@ -104,7 +80,7 @@ public class Sistema {
                 
                 VeiculosDeCarga newCarga = new VeiculosDeCarga(nomeveiculo, ano, preco, capacidadeDecarga, quantDeeixo);
                 
-                ListaDeVeiculos.Addveiculo(newCarga);
+                ListaDeVeiculos.addVeiculo(newCarga);
                 System.out.println("========================================");
                 
                 
@@ -126,7 +102,7 @@ public class Sistema {
                 
                 VeiculosPasseio newVPassaPasseio = new VeiculosPasseio(nomeveiculo, ano, preco, CapDePassageiros);
                 
-                ListaDeVeiculos.Addveiculo(newVPassaPasseio);
+                ListaDeVeiculos.addVeiculo(newVPassaPasseio);
                 System.out.println("========================================");
                 
                 
@@ -154,22 +130,22 @@ public class Sistema {
                 case "6":
                 System.out.println("========================================");
                 System.out.println("--- Lista veiculos de carga ---");
-                ListaDeVeiculos.ListaVcarga();
+                ListaDeVeiculos.listaVcarga();
                 break;
                 case "7":
                 System.out.println("========================================");
                 System.out.println("--- Lista veiculos esportivos ---");
-                ListaDeVeiculos.ListarVesportivos();
+                ListaDeVeiculos.listarVesportivos();
                 break;
                 case "8":
                 System.out.println("========================================");
                 System.out.println("--- lista veiculos de passeio ---");
-                ListaDeVeiculos.ListarVpasseio();
+                ListaDeVeiculos.listarVpasseio();
                 
                 break;
                 case "9":
                 System.out.println("=========================");
-                ListaDeVeiculos.ExibirListaConcessionarias();
+                ListaDeVeiculos.exibirListaConcessionarias();
 
                 break;
                 case "menu":
@@ -182,9 +158,30 @@ public class Sistema {
                 continuar = false;
                 break;
 
-                case "txt":
+                case "txta":
                 System.out.println("==================================================");
-                salvarVeiculosEmArquivo();
+                Buildtxt.salvarVeiculosEmArquivo();
+                System.out.println("Arquivo txt gerado...");
+                System.out.println("==================================================");
+
+                break;
+                case "txte":
+                System.out.println("==================================================");
+                Buildtxt.gerarTXTvEsportivos();
+                System.out.println("Arquivo txt gerado...");
+                System.out.println("==================================================");
+
+                break;
+                case "txtc":
+                System.out.println("==================================================");
+                Buildtxt.gerarTXTvCarga();
+                System.out.println("Arquivo txt gerado...");
+                System.out.println("==================================================");
+
+                break;
+                case "txtp":
+                System.out.println("==================================================");
+                Buildtxt.gerarTXTpasseio();
                 System.out.println("Arquivo txt gerado...");
                 System.out.println("==================================================");
 

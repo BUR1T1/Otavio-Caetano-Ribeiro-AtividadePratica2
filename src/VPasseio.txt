@@ -1,0 +1,20 @@
+-------- Lista de Veículos de Passeio --------
+===================================================
+
+Veiculo: Spin
+Ano: 2022
+Preço: R$70.0
+Quantidade de assentos por pessoa: 7
+========================================
+
+Veiculo: Doblo
+Ano: 2021
+Preço: R$65.0
+Quantidade de assentos por pessoa: 9
+========================================
+
+Veiculo: Kombi
+Ano: 2021
+Preço: R$65.0
+Quantidade de assentos por pessoa: 9
+========================================

@@ -1,0 +1,23 @@
+-------- Lista de Veículos de Carga --------
+===================================================
+
+Veiculo: 5tom
+Ano: 2012
+Preço: R$500.0
+Capacidade de carga: 5 toneladas
+Quantidade de eixos: 3 eixos.
+========================================
+
+Veiculo: Scania142
+Ano: 1989
+Preço: R$135.0
+Capacidade de carga: 41 toneladas
+Quantidade de eixos: 3 eixos.
+========================================
+
+Veiculo: Volvo FH540
+Ano: 2022
+Preço: R$985.0
+Capacidade de carga: 80 toneladas
+Quantidade de eixos: 9 eixos.
+========================================

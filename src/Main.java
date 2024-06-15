@@ -13,17 +13,17 @@ public class Main {
         VeiculosPasseio p2Passeio = new VeiculosPasseio("Doblo", 2021, 65.000f, 9);
         VeiculosPasseio p3Passeio = new VeiculosPasseio("Kombi", 2021, 65.000f, 9);
 
-        ListaDeVeiculos.Addveiculo(c1Carga);
-        ListaDeVeiculos.Addveiculo(c2Carga);
-        ListaDeVeiculos.Addveiculo(c3Carga);
+        ListaDeVeiculos.addVeiculo(c1Carga);
+        ListaDeVeiculos.addVeiculo(c2Carga);
+        ListaDeVeiculos.addVeiculo(c3Carga);
 
-        ListaDeVeiculos.Addveiculo(e1Esportivos);
-        ListaDeVeiculos.Addveiculo(e2Esportivos);
-        ListaDeVeiculos.Addveiculo(e3Esportivos);
+        ListaDeVeiculos.addVeiculo(e1Esportivos);
+        ListaDeVeiculos.addVeiculo(e2Esportivos);
+        ListaDeVeiculos.addVeiculo(e3Esportivos);
 
-        ListaDeVeiculos.Addveiculo(p1Passeio);
-        ListaDeVeiculos.Addveiculo(p2Passeio);
-        ListaDeVeiculos.Addveiculo(p3Passeio);
+        ListaDeVeiculos.addVeiculo(p1Passeio);
+        ListaDeVeiculos.addVeiculo(p2Passeio);
+        ListaDeVeiculos.addVeiculo(p3Passeio);
 
         
         Sistema.Controle();

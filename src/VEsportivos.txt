@@ -1,0 +1,20 @@
+-------- Lista de Veículos Esportivos --------
+===================================================
+
+Veiculo: Ferrari 488 GTB
+Ano: 2021
+Preço: R$2.0
+Potencia do motor: 8000RPM  (rotações por minuto)
+========================================
+
+Veiculo: Lamborghini Huracán EVO
+Ano: 2022
+Preço: R$2.5
+Potencia do motor: 8000RPM  (rotações por minuto)
+========================================
+
+Veiculo: Porsche 911 Turbo S
+Ano: 2020
+Preço: R$1.8
+Potencia do motor: 7000RPM  (rotações por minuto)
+========================================
